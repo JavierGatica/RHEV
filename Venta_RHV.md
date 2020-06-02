@@ -87,3 +87,26 @@ Estas fechas describen el desarrollo continuo de Red Hat de un producto de virtu
 
 En comparación con vSphere, Red Hat Virtualization tiene la mitad del costo operativo, tres veces la densidad de VM y un rendimiento 37% mejor.
 
+### Notas del  ciclo de vida.
+* El ciclo de vida general del producto Red Hat es de 10 años desde el envío de la primera versión principal
+* Ejemplo: Red Hat Enterprise Linux 5 enviado en marzo de 2007 → admitido hasta marzo de 2017
+* El ciclo de vida incluye el lanzamiento de actualizaciones: lanzamientos menores como 5.1, 5.2, 5.3
+* Algunos proveedores, como Oracle, afirman ofrecer soporte de por vida, sugiriendo que los productos son compatibles para siempre
+* PERO Oracle tiene una cláusula de escape que le permite abandonar el soporte para una versión específica de Linux en cualquier momento
+* "Lifetime" puede significar que siempre habrá un producto disponible, no que una versión en particular sea compatible para siempre
+
+#### Abra el caso de soporte a través de:
+* Teléfono
+* Charla
+* Portal del Cliente
+
+#### Buscar base de conocimiento:
+* Problemas previamente desconocidos agregados a la base
+
+## Despliegue
+### Red Hat Virtualization Manager con configuración de motor alojado
+* Implemente el hipervisor de Red Hat Virtualization
+* Implementar almacenamiento compartido
+* Implemente Red Hat Virtualization Manager en el hipervisor de Red Hat Virtualization
+* Suba la imagen ISO y configure la red lógica
+* Aprovisionar máquinas virtuales
