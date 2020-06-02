@@ -74,3 +74,16 @@ Soluciones
 
 Estas fechas describen el desarrollo continuo de Red Hat de un producto de virtualización listo para la empresa. Los hitos importantes incluyen la aceptación de KVM en el kernel de Linux en 2006, la adquisición de Qumranet / SolidICE por Red Hat en 2008 y el 24 de agosto de 2016, el lanzamiento de Red Hat Virtualization 4.0, la décima versión del producto.
 
+### Red Hat Virtualization
+* Gestión centralizada del hipervisor KVM
+* Costo de infraestructura reducido
+* Gestión automatizada de la carga de trabajo.
+* Rendimiento inigualable
+
+### Estadísticas economicas
+* 50% del costo operativo de vSphere
+* 3X densidad de VM y 37% mejor rendimiento
+* Puede mover sin problemas cargas de trabajo de vSphere a Red Hat Virtualization
+
+En comparación con vSphere, Red Hat Virtualization tiene la mitad del costo operativo, tres veces la densidad de VM y un rendimiento 37% mejor.
+
