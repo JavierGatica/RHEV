@@ -56,3 +56,24 @@ El centro de datos a la derecha contiene dos grupos. Esos clústeres comparten e
 Es posible que deba dividir los centros de datos en función de la aplicación, la unidad de negocios, la preparación, el ciclo de vida del desarrollo o el programa de respaldo. Es posible que deba dividir clústeres en función de las necesidades de CPU, memoria o red.
 
 También es importante tener en cuenta que los recursos se pueden reasignar automáticamente, es decir, con equilibrio de carga, en función de diferentes umbrales.
+
+### Seguridad informática: SELinux y sVirt
+* Debido a que Red Hat Virtualization se basa en Red Hat Enterprise Linux, hereda las características de seguridad de Linux con seguridad mejorada (SELinux)
+* SELinux basado en etiquetado
+* Los procesos obtienen etiquetas, y las máquinas virtuales en KVM / QEMU son procesos
+* Los archivos y dispositivos también reciben etiquetas, incluidas imágenes virtuales
+* Las reglas de SELinux controlan cómo interactúan los procesos con las etiquetas de archivos y procesos.
+* A su vez, sVirt dicta cómo los procesos interactúan con archivos y etiquetas de proceso que interactúan con archivos, procesos y libvirt relacionados con la virtualización.
+
+
+### Seguridad informática - SELinux
+* Implementación de MAC en el kernel de Linux
+* Verifica las operaciones permitidas después de verificar los controles de acceso discrecional (DAC) estándar
+* Puede aplicar una política de seguridad personalizable por el usuario en los procesos en ejecución y sus acciones, incluidos los intentos de acceder a los objetos del sistema de archivos
+* Habilitado por defecto en Red Hat Enterprise Linux
+* Limita el alcance del daño potencial que puede resultar de la explotación de vulnerabilidades en aplicaciones y servicios del sistema como hipervisores
+
+### Seguridad informática - sVirt
+* libvirt es la capa de abstracción de gestión de virtualización
+* sVirt se integra con libvirt para proporcionar el marco MAC para máquinas virtuales
+* La arquitectura permite que todas las plataformas de virtualización compatibles con libvirt y todas las implementaciones de MAC compatibles con sVirt interoperen
